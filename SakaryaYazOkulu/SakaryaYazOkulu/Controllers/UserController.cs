@@ -61,7 +61,7 @@ namespace SakaryaYazOkulu.Controllers
 
         private bool LoginUser(string userName, string password)
         {
-            if(userName =="211210180@gmail.com"  || password == "123")
+            if(userName =="211210106@gmail.com"  || password == "123")
             {
                 return true;
             }
