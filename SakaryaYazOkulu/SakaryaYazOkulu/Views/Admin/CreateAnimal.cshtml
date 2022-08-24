@@ -1,0 +1,32 @@
+﻿
+@model List<Animal>
+
+    @{
+    ViewBag.Title = "CreateAnimal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    // Burada sadece listeliyor addını yanlış yazdım ekleme işlemleri RealCreate classımda
+}
+<table class="table table-bordered" ">
+    <br />
+    <tr>
+        <th>Id</th>
+        <th>Adı</th>
+        <th>Yaşı</th>
+        <th>Türü</th>
+        <th>Cinsiyeti</th>
+        <th>Sahipli Mi?</th>
+    </tr>
+    @foreach( var x in Model)
+    {<tr>
+        <th>@x.AnimalId</th>
+        <th>@x.Name</th>
+        <th>@x.Old</th>
+        <th>@x.Type</th>
+        <th>@x.IsBoy</th>
+        <th>@x.IsOwned</th>
+        
+    </tr>
+    }
+    <a href="/Admin/RealCreate/" class="btn btn-primary"> Hayvan Eklemek İçin Tıklayınız.</a>
+    
+</table>

@@ -1,0 +1,31 @@
+﻿
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container h-100">
+    <main class="login-form">
+        <div class="cotainer">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">Giriş</div>
+                        <div class="card-body">
+                            <form method="GET" action="/User/Login">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-success w-100 mt-1 mb-2">Kullanıcı Girişi</button>
+                                </div>
+                            </form>
+                            <form method="GET" action="/Admin/Login">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-success w-100 mt-1 mb-2" formaction="/Admin/Login">Admin Girişi</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

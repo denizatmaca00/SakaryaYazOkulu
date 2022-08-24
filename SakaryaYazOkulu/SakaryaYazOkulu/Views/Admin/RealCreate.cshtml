@@ -1,0 +1,35 @@
+﻿
+
+@model SakaryaYazOkulu.Models.Animal
+@{
+    ViewBag.Title = "RealCreate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="form-group" method="post" >
+
+    <div>
+        <label>Adı</label>
+ <input type="text" class="form-control" asp-for="Name" />    </div>
+    <div>
+        <label>Yaşı</label>
+        <input type="text" class="form-control" asp-for="Old" />
+         
+
+    </div>
+
+    <div>
+        <label>Türü</label>
+        <input type="text" class="form-control" asp-for="Type" />
+    </div><div>
+        <label>Cinsiyeti</label>
+        <input type="text" class="form-control" asp-for="IsBoy" />
+    </div><div>
+        <label>Sahipli Mi?</label>
+        <input type="text" class="form-control" asp-for="IsOwned" />
+    
+        <div style="margin-top:10px">
+        
+    </div>
+     <a href="/Admin/CreateAnimal/" class="btn btn-info"> EKLE</a>
+</form>
